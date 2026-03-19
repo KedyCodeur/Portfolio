@@ -1,4 +1,4 @@
-import './Page.css'
+
 
 
 function HireMe(){

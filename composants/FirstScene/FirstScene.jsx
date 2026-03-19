@@ -47,7 +47,7 @@ function FirstScene({setSceneDisplay}) {
         let action
 
         loader.load(
-            '/honor.glb', 
+            '/models/honor.glb', 
 
             (gltf) => {
                 const model = gltf.scene;

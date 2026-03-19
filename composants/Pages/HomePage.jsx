@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import './Page.css'
+import './HomePage.css'
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
@@ -45,7 +45,7 @@ function HomePage(){
         const loader = new GLTFLoader();
         let moon;
         loader.load(
-            '/moon.glb',
+            '/models/moon.glb',
             (gltf)=>{
                 
                 moon = gltf.scene
@@ -70,7 +70,7 @@ function HomePage(){
         let mixer;
         let cat
         catLoader.load(
-                '/cat.glb',
+                '/models/cat.glb',
                 (gltf) => {
                     cat = gltf.scene;
                     cat.position.z = 120;
@@ -99,7 +99,7 @@ function HomePage(){
         const starLoader = new GLTFLoader()
         let star
         starLoader.load(
-                '/star.glb',
+                '/models/star.glb',
                 (gltf) => {
                     star = gltf.scene;
                     star.position.z = 110;
@@ -180,11 +180,10 @@ function HomePage(){
 
 
 
-
-
-
     return(
-        <div className="HomePage Page">
+       
+        <div className="HomePage Page" >
+           
             <div className='homePageleft'>
                 <canvas className='moon' ref={moonRef}></canvas>
             </div>
@@ -197,7 +196,11 @@ function HomePage(){
                     <a href="#">About Me</a>
                     <a href="#">Contact</a>
                 </div>
-
+                <div className="heroSocial">
+                    <img src="/photos/linkedin.png" alt="Linkedin icon" />
+                    <img src="/photos/github.png" alt="Github icon" />
+                    <img src="/photos/cv.png" alt="Cv icon" />
+                </div>
             </div>
         </div>  
     );

@@ -1,4 +1,3 @@
-import './Page.css'
 
 
 function AboutPage(){
