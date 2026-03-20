@@ -137,10 +137,7 @@ function HomePage(){
                           
                             child.material = new THREE.MeshBasicMaterial({
                                 color: "gold",
-                                wireframe: true,
-                                emissive:"gold",
-                                emissiveIntensity:2
-    
+                                wireframe: true,    
                             });
                         }
                     });

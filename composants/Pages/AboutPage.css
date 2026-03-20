@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .AboutPage {
+  
   position: relative;
   background: radial-gradient(circle, #333333 0%, #8e0707 100%);
   z-index: 2;

@@ -99,7 +99,7 @@ function AboutPage(){
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDampinge = true;
         controls.dampingFactor= 0.05;
-        
+        controls.enablePan=false;
         let loopID
         function loop() {
           
@@ -109,7 +109,7 @@ function AboutPage(){
             if (!behemothRef.current || !camera) return;
             renderer.render(blodyScene, camera);
             
-            console.log(behemoth?.rotation)
+           
             }
             
             

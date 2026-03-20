@@ -1,10 +1,10 @@
-
+import './Projects.css'
 
 function Projects(){
 
 
     return(
-        <div className="Projects Page">
+        <div className="Project">
             
         </div>
     );

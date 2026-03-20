@@ -7,6 +7,7 @@
 
 
 .HomePage {
+  
   background: radial-gradient(circle, #333333 0%, #000000 100%);
   z-index: 1;
   padding: 1rem;

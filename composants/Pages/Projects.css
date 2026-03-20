@@ -1,0 +1,12 @@
+.Project{
+  position: relative;
+  background: radial-gradient(circle, #333333 0%, #0a827c 100%);
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+}
