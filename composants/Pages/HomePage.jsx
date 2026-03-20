@@ -1,19 +1,42 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef,useState } from 'react';
 import './HomePage.css'
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/Addons.js';
+import Stats from 'stats.js';
 
 function HomePage(){
 
+
     //MOON
     
-
+    const containerRef = useRef(null);
     const moonRef = useRef(null);
     const group = new THREE.Group()
-    
+    const [isIntersecting, setIntersecting] = useState(false);
     useEffect(()=>{
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+              
+                setIntersecting(entry.isIntersecting);
+            },
+            { 
+                threshold: 0.1, 
+                rootMargin: "0px" 
+            }
+            );
 
+            if (containerRef.current) {
+            observer.observe(containerRef.current);
+            }
+
+            const stats = new Stats();
+            stats.showPanel(0); 
+            
+            stats.dom.style.position = 'fixed'; 
+            stats.dom.style.top = '10px';
+            stats.dom.style.left = '10px';
+            stats.dom.style.zIndex = '10000';
+            document.body.appendChild(stats.dom);
 
 
         let width = moonRef.current.clientWidth;
@@ -22,18 +45,19 @@ function HomePage(){
         const moonScene = new THREE.Scene();
         moonScene.add(group);
 
-        let camera = new THREE.PerspectiveCamera(90,width/height,0.1,99999999);
+        let camera = new THREE.PerspectiveCamera(90,width/height,0.1,1000);
         camera.position.z = 220;
        
        
         const renderer = new THREE.WebGLRenderer({
             canvas:moonRef.current,
             antialias:true,
-            alpha:true
+            alpha:true,
+            powerPreference: "high-performance",
         });
 
         renderer.setSize(width, height);
-        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
         
         const light = new THREE.AmbientLight(0xffffff, 1); 
         moonScene.add(light);
@@ -41,6 +65,8 @@ function HomePage(){
         renderer.outputColorSpace = THREE.SRGBColorSpace; 
         renderer.toneMapping = THREE.ACESFilmicToneMapping; 
         renderer.toneMappingExposure = 1.7; 
+
+
 
         const loader = new GLTFLoader();
         let moon;
@@ -124,42 +150,39 @@ function HomePage(){
             );
 
         
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.autoRotate = true;       
-        controls.autoRotateSpeed = 1.2; 
-        controls.enableRotate = false;
-        controls.enableZoom = false;
-        controls.enablePan = false;
+
         
         let loopID
         function loop() {
+             stats.begin();
             loopID = window.requestAnimationFrame(loop);
                 
-             
+            if (!isIntersecting) return;
             const delta = clock.getDelta();
             if (mixer) {
                 mixer.update(delta);
             }
             group.rotation.y += 0.005;
 
-            controls.update();
             renderer.render(moonScene, camera);
+              stats.end();
             }
         
         loop();
         
         function resize(){
+           
             const width = moonRef.current.clientWidth;
             const height = moonRef.current.clientHeight;
             renderer.setSize(width, height,false);
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
-            
+          
         }
         
         window.addEventListener("resize",resize);
 
-
+        
         return (() => {
                     window.removeEventListener("resize", resize);
                     cancelAnimationFrame(loopID);
@@ -175,14 +198,15 @@ function HomePage(){
                         }
                     });
                     renderer.dispose();
+                    observer.disconnect();
                 });
-    },[])
+    },[isIntersecting])
 
 
 
     return(
        
-        <div className="HomePage Page" >
+        <div className="HomePage"  ref={containerRef} >
            
             <div className='homePageleft'>
                 <canvas className='moon' ref={moonRef}></canvas>

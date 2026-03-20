@@ -1,0 +1,57 @@
+.skillsPage{
+  position: relative;
+  background: radial-gradient(circle, #333333 0%, #1f0539 100%);
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+}
+
+.idk{
+width: 100%;
+overflow: hidden;
+margin-top: 8rem;
+padding: 0 5rem;
+}
+
+.box{
+    background-color: aliceblue;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    box-shadow: 
+    0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 8px 8px rgba(0,0,0,0.11), 
+    0 16px 16px rgba(0,0,0,0.11), 
+    0 32px 32px rgba(0,0,0,0.11);
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.slider1{
+    display: flex;
+    width: max-content;
+    animation: slide 30s linear infinite;
+
+}
+@keyframes slide {
+    0% { transform: translate(0); }
+    100% { transform: translate(-50%) } 
+}
+
+.skillTitle{
+    color: aliceblue;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+}

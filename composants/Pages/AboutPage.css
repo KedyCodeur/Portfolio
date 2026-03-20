@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.AboutPage {
+  position: relative;
+  background: radial-gradient(circle, #333333 0%, #8e0707 100%);
+  z-index: 2;
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;
+  padding: 0 5rem; 
+  overflow: hidden;
+}
+
+.behemothPlaceHolder {
+  width: 50rem; 
+  height: 50rem;
+  position: relative; 
+  flex-shrink: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide linear;
+  animation-timeline: scroll(y);
+}
+
+.behemoth {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+.behemoth:hover {
+  cursor: pointer;
+}
+.text {
+  color: aliceblue;
+  max-width: 50%;
+    text-shadow: 
+    1px  1px 0 #000,
+   -1px  1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+}
+
+
+
+.text p {
+  font-size: 1.8rem;
+  font-family: "Bebas Neue",sans-serif;
+  line-height: 1.3;
+}
+
+.text h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: gold; 
+}
+
+
+@keyframes slide {
+  from {
+    
+    transform: translateY(75px) scale(0.5); 
+  }
+  to {
+    opacity: 1; 
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media screen and (max-width: 1700px) {
+
+
+
+.behemothPlaceHolder {
+  width: 40rem; 
+  height: 40rem;
+}
+.text{
+  width: 100%;
+}
+.text p {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.text h2 {
+
+  font-size: 4rem;
+
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+.AboutPage {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.behemothPlaceHolder {
+  margin-top: 50px;
+  width: 20rem; 
+  height: 20rem;
+}
+.behemoth{
+    width: 20rem; 
+  height: 20rem;
+}
+.text {
+  color: aliceblue;
+  max-width: 60%;
+  flex: 1; 
+}
+.text p {
+  
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+
+.text h2 {
+  text-align: center;
+
+  font-size: 3rem;
+
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+.text {
+
+  max-width: 80%;
+
+}
+
+
+}

@@ -6,11 +6,12 @@ import AboutPage from './composants/Pages/AboutPage'
 import Projects from './composants/Pages/Projects'
 import HireMe from './composants/Pages/HireMe'
 import Header from './composants/Header/Header.jsx'
+import Skills from './composants/Pages/Skills.jsx'
 
 
 function App() {
   const [sceneDisplay,setSceneDisplay] = useState(true)
-/*  <FirstScene setSceneDisplay={setSceneDisplay}/>         */
+/*       <FirstScene setSceneDisplay={setSceneDisplay}/>   */
   return (
     <>
       <div className="pageContainer">
@@ -18,6 +19,7 @@ function App() {
               <Header/>
               <HomePage/>
               <AboutPage/>
+              <Skills/>
               <Projects/>
               <HireMe/>
               </> }
