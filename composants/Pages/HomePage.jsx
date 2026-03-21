@@ -2,7 +2,7 @@ import { useEffect, useRef,useState } from 'react';
 import './HomePage.css'
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import Stats from 'stats.js';
+
 
 function HomePage(){
 
@@ -29,14 +29,6 @@ function HomePage(){
             observer.observe(containerRef.current);
             }
 
-            const stats = new Stats();
-            stats.showPanel(0); 
-            
-            stats.dom.style.position = 'fixed'; 
-            stats.dom.style.top = '10px';
-            stats.dom.style.left = '10px';
-            stats.dom.style.zIndex = '10000';
-            document.body.appendChild(stats.dom);
 
 
         let width = moonRef.current.clientWidth;
@@ -151,7 +143,7 @@ function HomePage(){
         
         let loopID
         function loop() {
-             stats.begin();
+         
             loopID = window.requestAnimationFrame(loop);
                 
             if (!isIntersecting) return;
@@ -162,7 +154,7 @@ function HomePage(){
             group.rotation.y += 0.005;
 
             renderer.render(moonScene, camera);
-              stats.end();
+         
             }
         
         loop();
