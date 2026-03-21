@@ -1,0 +1,94 @@
+
+
+.Education{
+  position: relative;
+  background: radial-gradient(circle, #333333 0%, #229e68 100%);
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+}
+
+
+
+.Education h2{
+  color: aliceblue;
+  font-size: 3rem;
+  font-family: cursive;
+  margin-bottom: 3rem;
+      font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.educationCarte{
+  background-color: rgba(240, 248, 255, 0.573);
+  width: 50rem;
+  height: 7rem;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 5px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.educationName{
+  font-size: 1.2rem;
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 900;
+  font-style: italic;
+  
+  
+}
+
+.sideName{
+  font-size: 0.9rem;
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 500;
+  margin-left: 10px;
+
+  
+}
+
+@media screen and (max-width: 870px) {
+
+.Education h2{
+  font-size: 2rem;
+}
+
+.educationCarte{
+  width: 80%;
+}
+
+.educationName{
+  font-size: 1rem !important;
+}
+
+.sideName{
+  font-size: 0.7rem !important;
+}
+}
+
+@media screen and (max-width: 520px) {
+
+.Education h2{
+  font-size: 1.5rem;
+}
+
+.educationCarte{
+  width: 80%;
+}
+
+.educationName{
+  font-size: 0.8rem !important;
+}
+
+.sideName{
+  font-size: 0.7rem !important;
+}
+}
