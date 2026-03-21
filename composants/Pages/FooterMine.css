@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    font-family: cursive;
+    text-align: center;
+}
+
+.footerSocial{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+
+}
+.footerSocial img{
+    width:2.5rem;
+    height: 2.5rem;
+
+}
+.footerSocial img:hover{
+  filter: brightness(1.4);
+  cursor: pointer;
+  transition: 0.3s;
+}

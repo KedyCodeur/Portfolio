@@ -11,20 +11,20 @@ function Education(){
         <div className="Education">
                 <h2>My Education</h2>
                 <div className="educationCarte">
-                    <div className="educationName">Bachelor en Informatique</div>
-                    <div className='sideName'>depuis septrembre 2025 SUPINFO Paris</div>
+                    <div className="educationName">Bachelor of Science in Computer Science</div>
+                    <div className='sideName'>Since September 2025 – SUPINFO Paris</div>
                 </div>
                 <div className="educationCarte">
-                    <div className="educationName">Certificats du DELF B1 et du DELF B2</div>
-                    <div className='sideName'>De mars 2025 à août 2025 EF Paris Paris</div>
+                    <div className="educationName">DELF B1 & DELF B2 Language Certificates</div>
+                    <div className='sideName'>March 2025 – August 2025 – EF Paris, France</div>
                 </div>
                 <div className="educationCarte">
-                    <div className="educationName">Licence d'Économie - Parcours en anglais</div>
-                    <div className='sideName'>De septembre 2024 à janvier 2025 Université de MARMARA Istanbul</div>
+                    <div className="educationName">Bachelor’s Degree in Economics (English Track)</div>
+                    <div className='sideName'>September 2024 – January 2025 – Marmara University, Istanbul</div>
                 </div>
                 <div className="educationCarte">
-                    <div className="educationName">Baccalauréat Scientifique</div>
-                    <div className='sideName'>De 2020 à 2024 Mehmet PISAK Lycée Anatolien Istanbul, IB, Turkey</div>
+                    <div className="educationName">High School Diploma (Science Stream)</div>
+                    <div className='sideName'>2020 – 2024 – Mehmet Pisak Anatolian High School, Istanbul, Turkey</div>
                 </div>
         </div>  
     );

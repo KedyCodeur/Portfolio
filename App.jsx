@@ -7,21 +7,36 @@ import Projects from './composants/Pages/Projects'
 import HireMe from './composants/Pages/HireMe'
 import Header from './composants/Header/Header.jsx'
 import Skills from './composants/Pages/Skills.jsx'
-
+import Education from './composants/Pages/Education.jsx'
+import FooterMine from './composants/Pages/FooterMine.jsx'
 
 function App() {
   const [sceneDisplay,setSceneDisplay] = useState(true)
-/*       <FirstScene setSceneDisplay={setSceneDisplay}/>   */
+/*      ?  <FirstScene setSceneDisplay={setSceneDisplay}/>   :  */
   return (
     <>
       <div className="pageContainer">
-              {sceneDisplay && <>
+              {sceneDisplay &&<>
               <Header/>
               <HomePage/>
-              <AboutPage/>
-              <Skills/>
-              <Projects/>
-              <HireMe/>
+
+              <main>
+                <section id='about'>
+                  <AboutPage/>
+                  <Skills/>
+                  <Education/>
+                </section>
+
+                <section id='projects'>
+                  <Projects/>
+                </section>
+
+                <section id='contact'>
+                    <HireMe/>   
+                </section>
+                         
+              </main>
+              <FooterMine/>
               </> }
 
       </div>

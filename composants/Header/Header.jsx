@@ -8,11 +8,12 @@ function Header(){
 
         
         <div className="header">
-            <h1><a href="" className='titleHeader'>Kedy</a></h1>
+            <h1><a href="#" className='titleHeader'>Kedy</a></h1>
             <div className="navs">
-                <a href="">About me</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                
+                <a href="#about">About me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
                 <span className='containerSpan'  onClick={(e) =>{
                      e.currentTarget.classList.toggle("clicked");
                     headerSide.current.classList.toggle("showYourSelf")
@@ -24,9 +25,9 @@ function Header(){
          
         </div>       
            <div className="headerSide" ref={headerSide}>
-                <a href="">About me</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a href="#about">About me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>   
        
         

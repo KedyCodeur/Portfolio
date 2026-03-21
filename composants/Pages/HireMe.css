@@ -1,0 +1,264 @@
+.hireMe{
+  position: relative;
+  background: radial-gradient(circle, #333333 0%, #c5c5c5 100%);
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.center{
+    width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.hireMe form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  gap: 15px;
+
+}
+
+.hireMe h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  color: gold; 
+}
+.contactText{
+  font-size: 2rem;
+  font-family: "Bebas Neue",sans-serif;
+  line-height: 1.3;
+  color: whitesmoke;
+  width: 40%;
+      text-shadow: 
+    1px  1px 0 #000,
+   -1px  1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+}
+.columner{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.double{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+form input{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.mailInput{
+  width: 100%;
+  
+}
+
+form textarea{
+  width: 100%;
+  height: 20rem !important;
+  align-self: center;
+  height: 3rem;
+  border-radius: 5px;
+    padding: 1rem;
+    
+}
+
+.hireMe label{
+  font-size: 1.2rem;
+  font-family: "Bebas Neue",sans-serif;
+  color: aliceblue;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 
+    1px  1px 0 #000,
+   -1px  1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+
+}
+.hireMe button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  background-color: gold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+   font-family: "Bebas Neue",sans-serif;
+   letter-spacing: 2px;
+}
+.hireMe button:hover{
+    background-color: rgba(169, 144, 3, 0.737);
+    cursor: pointer;
+    transition: 0.5s;
+}
+@media screen and (max-width: 1350px) {
+.center{
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   gap: 2.5rem;
+}
+
+
+.hireMe h2{
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 0.2rem;
+
+}
+.contactText{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bebas Neue",sans-serif;
+  line-height: 1.3;
+  color: whitesmoke;
+  width: 80%;
+      text-shadow: 
+    1px  1px 0 #000,
+   -1px  1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+}
+.columner{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form input{
+  width: 15rem;
+  height: 2.7rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.mailInput{
+  width: 100%;
+  
+}
+
+form textarea{
+  width: 100%;
+  height: 15rem !important;
+  align-self: center;
+  height: 3rem;
+  border-radius: 5px;
+    padding: 1rem;
+}
+
+
+.hireMe label{
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  color: aliceblue;
+  font-weight: 700;
+
+}
+.hireMe button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  background-color: gold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+}
+
+@media screen and (max-width: 570px) {
+.center{
+  margin-top: 4rem;
+}
+
+
+.hireMe h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+
+}
+.contactText{
+ 
+  font-size: 1.2rem;
+  font-family: "Bebas Neue",sans-serif;
+  line-height: 1.2;
+  color: whitesmoke;
+  width: 90%;
+      text-shadow: 
+    1px  1px 0 #000,
+   -1px  1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+}
+.columner{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+  
+}
+
+form input{
+  width: 8rem;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.mailInput{
+  width: 100%;
+  
+}
+
+form textarea{
+  width: 100%;
+  height: 10rem !important;
+  align-self: center;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+
+.hireMe label{
+  font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  color: aliceblue;
+  font-weight: 700;
+  
+
+}
+.hireMe button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5rem;
+  background-color: gold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+}

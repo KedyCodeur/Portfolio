@@ -234,6 +234,15 @@ function Skills(){
                         <div className="barMastery" style={{width:"35%"}}></div>
                     </div>
                 </div>
+
+                <div className="skillContainer">
+                    <p className='skillname'>Flask</p>
+                    <div className="bars">
+                        <div className="barWhite"></div>
+                        <div className="barMastery" style={{width:"15%"}}></div>
+                    </div>
+                </div>
+
             </div>
         </div>  
     );

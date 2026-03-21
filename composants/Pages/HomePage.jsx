@@ -214,13 +214,13 @@ function HomePage(){
                     I build web applications and Python programs. <br />
                 </p>
                 <div className='explicationButtons'>
-                    <a href="#">About Me</a>
-                    <a href="#">Contact</a>
+                    <a href="#about">About Me</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div className="heroSocial">
-                    <img src="/photos/linkedin.png" alt="Linkedin icon" />
-                    <img src="/photos/github.png" alt="Github icon" />
-                    <img src="/photos/cv.png" alt="Cv icon" />
+                    <a href="https://www.linkedin.com/in/cemsahozdemirel/" target="_blank" rel="noopener noreferrer" ><img src="/photos/linkedin.png" alt="Linkedin icon" /></a>
+                    <a href="https://github.com/KedyCodeur" target="_blank" rel="noopener noreferrer" ><img src="/photos/github.png" alt="Github icon" /></a>
+                    <a href="https://cvdesignr.com/p/6910a7cf6ed5d" target="_blank" rel="noopener noreferrer"><img src="/photos/cv.png" alt="Cv icon" /></a>
                 </div>
             </div>
         </div>  
