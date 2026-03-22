@@ -12,7 +12,7 @@ import FooterMine from './composants/Pages/FooterMine.jsx'
 
 function App() {
   const [sceneDisplay,setSceneDisplay] = useState(true)
-/*     ? <FirstScene setSceneDisplay={setSceneDisplay}/>  :  */
+/*    */
   return (
     <>
       <div className="pageContainer">
