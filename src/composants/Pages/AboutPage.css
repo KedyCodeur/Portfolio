@@ -29,12 +29,14 @@
   align-items: center;
   animation: slide linear;
   animation-timeline: scroll(y);
+  
 }
 
 .behemoth {
   position: absolute; 
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 100% !important;
   height: 100% !important;
   display: block;
@@ -89,6 +91,7 @@
 }
 .text{
   width: 100%;
+  flex-grow: 0;
 }
 .text p {
   font-size: 1.6rem;
@@ -109,7 +112,9 @@
 .AboutPage {
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding:0;
+  padding-bottom: 3rem;
+  justify-content: center;
 }
 
 .behemothPlaceHolder {
@@ -117,9 +122,14 @@
   width: 20rem; 
   height: 20rem;
 }
-.behemoth{
-    width: 20rem; 
-  height: 20rem;
+.behemoth {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
 }
 .text {
   color: aliceblue;

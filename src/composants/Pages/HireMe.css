@@ -10,6 +10,7 @@
 }
 
 .center{
+  margin-top: 2rem;
     width: 100%;
   height: 100%;
   display: flex;
@@ -82,7 +83,7 @@ form textarea{
 .hireMe label{
   font-size: 1.2rem;
   font-family: "Bebas Neue",sans-serif;
-  color: aliceblue;
+    color: gold;
   font-weight: 500;
   letter-spacing: 2px;
   text-shadow: 
@@ -117,6 +118,7 @@ form textarea{
   align-items: center;
   justify-content: center;
    gap: 2.5rem;
+   margin-top: 4rem;
 }
 
 
@@ -189,7 +191,7 @@ form textarea{
 
 @media screen and (max-width: 570px) {
 .center{
-  margin-top: 4rem;
+  margin-top: 4rem !important;
 }
 
 
@@ -201,16 +203,12 @@ form textarea{
 }
 .contactText{
  
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Bebas Neue",sans-serif;
-  line-height: 1.2;
+  line-height: 1.3;
   color: whitesmoke;
   width: 90%;
-      text-shadow: 
-    1px  1px 0 #000,
-   -1px  1px 0 #000,
-    1px -1px 0 #000,
-   -1px -1px 0 #000;
+
 }
 .columner{
   display: flex;
@@ -221,8 +219,82 @@ form textarea{
 }
 
 form input{
-  width: 8rem;
-  height: 2rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.mailInput{
+  width: 100%;
+  
+}
+
+form textarea{
+  width: 100%;
+  height: 13rem !important;
+  align-self: center;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+
+.hireMe label{
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  color: gold;
+  font-weight: 700;
+  
+
+}
+.hireMe button{
+  font-weight: 200;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.7rem;
+  background-color: gold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+}
+
+@media screen and (max-width: 370px) {
+.center{
+  margin-top: 4rem !important;
+}
+
+
+.hireMe h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+
+}
+.contactText{
+ 
+  font-size: 1.4rem;
+  font-family: "Bebas Neue",sans-serif;
+  line-height: 1.2;
+  color: whitesmoke;
+  width: 90%;
+
+}
+.columner{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+  
+}
+
+form input{
+  width: 8.6rem;
+  height: 2.5rem;
   border-radius: 5px;
   padding: 1rem;
 }
@@ -243,19 +315,21 @@ form textarea{
 
 
 .hireMe label{
-  font-size: 0.8rem;
+  margin-left: 5px;
+  font-size: 0.9rem;
   font-family: 'Inter', sans-serif;
-  color: aliceblue;
+
   font-weight: 700;
   
 
 }
 .hireMe button{
+  font-weight: 200;
   width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 0.5rem;
+  padding: 0.7rem;
   background-color: gold;
   font-size: 1.2rem;
   border-radius: 5px;

@@ -152,13 +152,23 @@
 
 
 @media screen and (max-width: 1060px) {
+  
 .HomePage{
   display: flex;
   flex-direction: column;
 
 }
-.homePageleft{
+.homePageleft {
+  overflow: hidden;
+  width: 90vw; 
+  height: 80vw; 
+  max-width: 40rem;
+  max-height: 40rem;  
+  min-width: 450px;
+
   height: fit-content;
+  
+  
 }
 
 }
