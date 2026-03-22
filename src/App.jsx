@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className="pageContainer">
-              {sceneDisplay &&  <>
+              {sceneDisplay   ? <FirstScene setSceneDisplay={setSceneDisplay}/>  :   <>
               <Header/>
               <HomePage/>
 

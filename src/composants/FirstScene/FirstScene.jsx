@@ -119,7 +119,7 @@ function FirstScene({setSceneDisplay}) {
                 action.timeScale = actionSpeed;
             }
             if(action.time >= 16.7 && !action.paused){
-                if(actionSpeed <= 2){
+                if(actionSpeed <= 2.2){
                     actionSpeed += 0.05
                 }
                 action.timeScale = actionSpeed;
