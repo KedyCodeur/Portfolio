@@ -50,7 +50,8 @@
 .navs a{
     text-decoration: none;
     color: aliceblue;
-    font-family:cursive;
+    font-weight: 700;
+     font-family: "Comic Neue", cursive;
     animation-delay: 0.3s;
     animation: appear 0.5s linear forwards;
       overflow: hidden;
@@ -109,6 +110,7 @@
     background-color: #33333338;
     z-index: 999;
     transition: 1s linear;
+    
 }
 
  .showYourSelf{
@@ -124,7 +126,8 @@
     align-items: center;
     text-decoration: none;
     color: aliceblue;
-    font-family:cursive;
+    font-weight: 700;
+     font-family: "Comic Neue", cursive;
     
 }
 
