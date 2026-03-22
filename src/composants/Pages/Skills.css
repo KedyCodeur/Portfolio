@@ -6,7 +6,8 @@
   width: 100vw;
   min-height: 100vh;
   height: fit-content;
-  padding: 1rem;
+
+
 }
 
 .idk{
@@ -110,6 +111,9 @@ padding: 0 5rem;
 
 .allSkills{
     grid-template-columns: 1fr 1fr;
+}
+.skillsPage{
+      padding-bottom: 4rem;
 }
 
 

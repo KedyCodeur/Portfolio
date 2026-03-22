@@ -75,20 +75,22 @@
 }
 
 @media screen and (max-width: 520px) {
-
 .Education h2{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+
 }
 
 .educationCarte{
   width: 80%;
+  height: 8rem;
 }
 
 .educationName{
-  font-size: 0.8rem !important;
+  font-size: 1rem !important;
 }
 
 .sideName{
-  font-size: 0.7rem !important;
+  font-size: 0.8rem !important;
 }
 }
