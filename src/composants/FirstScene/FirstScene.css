@@ -43,3 +43,15 @@ z-index: 998;
   transition: 1s;
   
 }
+.startBtn {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    cursor: default;
+}
+
+.startBtn.visible {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}

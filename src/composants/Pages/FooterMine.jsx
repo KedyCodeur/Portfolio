@@ -13,7 +13,7 @@ function FooterMine(){
               <div className="footerSocial">
                     <a href="https://www.linkedin.com/in/cemsahozdemirel/" target="_blank" rel="noopener noreferrer" ><img src="/photos/linkedin.png" alt="Linkedin icon" /></a>
                     <a href="https://github.com/KedyCodeur" target="_blank" rel="noopener noreferrer" ><img src="/photos/github.png" alt="Github icon" /></a>
-                    <a href="https://cvdesignr.com/p/6910a7cf6ed5d" target="_blank" rel="noopener noreferrer"><img src="/photos/cv.png" alt="Cv icon" /></a>
+                    <a href="https://drive.google.com/drive/folders/1pBzZGgBS-fyZPYEOock3CEM31t3haCTn?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="/photos/cv.png" alt="Cv icon" /></a>
               </div>
             <p>&copy;KedyCodeur</p>
         </footer>
