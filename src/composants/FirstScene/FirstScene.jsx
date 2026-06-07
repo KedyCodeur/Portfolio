@@ -161,7 +161,7 @@ function FirstScene({setSceneDisplay}) {
         <div className="heroBackground">
             <canvas ref={canvasRef}  />
              
-              <span className={`startBtn ${isFinished ? 'visible' : ''}`} onClick={cameraMoveStart.current=true}> Start </span>
+              <span className={`startBtn ${isFinished ? 'visible' : ''}`} onClick={()=>cameraMoveStart.current=true}> Start </span>
              
         </div>
     );
