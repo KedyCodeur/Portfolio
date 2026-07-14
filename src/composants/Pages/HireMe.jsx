@@ -14,7 +14,7 @@ function HireMe(){
                 <p>Open for internships and collaborations! If you're looking for a dedicated developer to join your project, I’m just one message away.</p>
             </div>
        
-            <form action="https://formspree.io/f/maqpkkan" method="POST">
+            <form action="https://formspree.io/f/mqerapba" method="POST">
                 
                
             <div className="double">
