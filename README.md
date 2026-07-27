@@ -1,4 +1,4 @@
-# 🖤 Kedy Portfolio
+#  Kedy Portfolio
 
 Portfolio personnel de **Cem Sah Ozdemirel**, étudiant en informatique à SUPINFO Paris et développeur full-stack. Site moderne, réactif et visuellement soigné, construit avec React et des animations 3D/interactives.
 
